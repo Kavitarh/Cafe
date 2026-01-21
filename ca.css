@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #fff2b2, #fcb6f4);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f56c6c;
+  padding: 15px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.section1-text {
+  width: 50%;
+}
+
+.section1-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.section1-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.btn {
+  background: #f56c6c;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section1 img {
+  width: 45%;
+  border-radius: 0px;
+
+}
+
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.gallery {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px;
+}
+
+.gallery img:nth-child(2) {
+  grid-row: span 2;
+  height:510px; 
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.section2-text {
+  width: 40%;
+  padding-left: 20px;
+}
+
+.section2-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.section2-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.highlight-box {
+  background: #f56c6c;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 900px) {
+  .section1, .section2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section1 img, .section2-text, .gallery {
+    width: 100%;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+}
